@@ -15,6 +15,12 @@ btns.forEach(function (btn) {
     }else if(currentBtn.contains('reset')){
         count = 0;
     }
+    if(count < 0){
+      value.style.color = "red";
+    }else{
+      value.style.color = "white";
+    }
+    
     value.textContent = count;
   });
 });
